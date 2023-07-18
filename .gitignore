@@ -1,3 +1,7 @@
+data/price_sensitivity.csv
+data/feature_rich_data.csv
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

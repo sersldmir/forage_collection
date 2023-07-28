@@ -14,15 +14,13 @@ app.layout = html.Div(
             style={"text-align": "center", "font-weight": "bold"},
         ),
         html.H3(
-            children="""
-        \nSales plot.\n
-        """,
+            children="Sales plot",
             style={"text-align": "center"},
         ),
         html.Div(
             children=[
                 html.H4(children="Region Filter"),
-                dbc.Checklist(options=df["region"].unique(), value=[], id="check-list"),
+                dbc.Checklist(options=df["region"].unique(), value=["south"], id="check-list"),
             ],
             style={"position": "absolute", "left": "45.7%"},
         ),
